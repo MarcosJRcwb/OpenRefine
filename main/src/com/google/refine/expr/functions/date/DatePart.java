@@ -57,7 +57,6 @@ public class DatePart implements Function {
         if (args.length == 2 && 
                 args[0] != null && (args[0] instanceof Calendar || args[0] instanceof Date || args[0] instanceof OffsetDateTime) && 
                 args[1] != null && args[1] instanceof String) {
-            
             String part = (String) args[1];
             if (args[0] instanceof Calendar) {
                 return getPart((Calendar) args[0], part);
